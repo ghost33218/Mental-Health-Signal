@@ -201,7 +201,7 @@
   }
 
   function renderError(label, copy) {
-    errorLabelEl.textContent = label;
+    if (errorLabelEl) errorLabelEl.textContent = label;
     errorCopyEl.textContent = copy;
     showState("error");
   }
